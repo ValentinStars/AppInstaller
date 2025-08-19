@@ -22,7 +22,7 @@
 ## Использование
 
 ```bash
-git clone https://github.com/username/AppInstaller.git
+git clone https://github.com/valentinstars/AppInstaller.git
 cd AppInstaller
 chmod +x VSTAppInstaller.sh
 ./VSTAppInstaller.sh
