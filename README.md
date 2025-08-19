@@ -22,8 +22,55 @@
 ## Использование
 
 ```bash
-git clone https://github.com/valentinstars/AppInstaller.git
+git clone https://github.com/username/AppInstaller.git
 cd AppInstaller
 chmod +x VSTAppInstaller.sh
 ./VSTAppInstaller.sh
 ```
+
+После запуска скрипт запросит:
+1. **Путь или URL** до файла (например, AppImage или `.sh`)  
+2. **Куда установить** — в `~/.local/bin` или `/usr/local/bin`  
+3. **Имя команды** (по умолчанию совпадает с именем файла)  
+4. Нужно ли создать `.desktop` ярлык и добавить иконку  
+
+---
+
+## Скриншот работы
+
+![Скриншот](assets/screenshot.png)
+
+---
+
+## Структура проекта
+
+```
+.
+├── VSTAppInstaller.sh         # основной скрипт
+├── assets/
+│   └── screenshot.png   # скриншот работы
+└── README.md
+```
+
+---
+
+## Удаление программы
+
+Для каждой установки создается собственный uninstall-скрипт.  
+Он находится в:
+
+```
+~/.local/share/AppInstaller/<appname>/uninstall.sh
+```
+
+Запустите его для удаления установленного приложения:
+
+```bash
+~/.local/share/AppInstaller/<appname>/uninstall.sh
+```
+
+---
+
+## Требования
+- `curl` или `wget`
+- `file`, `strings` 
