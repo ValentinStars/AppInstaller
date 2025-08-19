@@ -72,7 +72,7 @@ backup_if_exists() {
   fi
 }
 
-MANIFEST_ROOT="$HOME/.local/share/universal_installer"
+MANIFEST_ROOT="$HOME/.local/share/AppInstaller"
 mkdir -p "$MANIFEST_ROOT"
 
 info "Просто Установщик Версии 1.0 by Valentin Stars"
