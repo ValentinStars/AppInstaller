@@ -1,4 +1,4 @@
-# Universal Installer
+# VST AppInstaller
 
 **Просто Установщик Версии 1.0 by Valentin Stars**  
 
